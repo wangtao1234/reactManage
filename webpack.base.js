@@ -14,10 +14,9 @@ const webpack = require('webpack');
       * 插件
       */
    plugins: [
-        new CleanWebpackPlugin(['dist']),
-         new HtmlWebpackPlugin({
-               title: 'Production'
-    })
+     new CleanWebpackPlugin(['dist/*.js','/dist/*.css']),
+     new webpack.NamedModulesPlugin(),
+     new webpack.HotModuleReplacementPlugin()
   ],
      /**
       * 输出

@@ -10,4 +10,4 @@ module.exports = merge(common,{
         contentBase: './dist',
         hot: true
     }
-})
+});
