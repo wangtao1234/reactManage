@@ -40,3 +40,5 @@ class Menus extends React.Component {
     </div>)
   }
 }
+
+export default Menus;

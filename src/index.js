@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link } from 'react-router'
-
+import { BrowserRouter as Router, Route,Switch} from 'react-router-dom';
+import Home from 'root/components/Home';
 ReactDOM.render((
-  Router>
-  <Route path="/" component={HomeLayOut}>
-  </Route>
-</Router>
-),doccument.getElementById("root"))
+  <Router>
+    <Switch>
+      <Route exact path="/" component={Home}>
+      </Route>
+    </Switch>
+  </Router>
+),document.getElementById("root"))
 
 
 /** 热部署 */

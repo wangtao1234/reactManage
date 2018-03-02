@@ -1,7 +1,10 @@
 import React from 'react';
-import {Footer} from 'antd';
-const Footer =()=>(){
+import {Layout} from 'antd';
+const {Footer} = Layout;
+const Footers =()=>(
   <Footer>
-      版权所有
+    React-Admin ©2017 Created by 865470087@qq.com
   </Footer>
-}
+)
+
+export default Footers;
